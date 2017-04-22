@@ -4,7 +4,7 @@
 	<head>
 
 		<meta charset="utf-8">		
-		<title>Седона - туристический рай Аризоны. Выбор гостиницы</title>
+		<title>Седона &ndash; туристический рай Аризоны. Выбор гостиницы</title>
 
 	</head>
 
@@ -14,7 +14,7 @@
 			<div class="container">
 				<div class="header-logo">
 					<img src="#" width="70" height="70" alt="Седона - туристический рай Аризоны"><!--не забыть поменять размер-->
-				</div>
+				</div><!--logo-->
 
 				<nav class="main-navigation">
 					<ul class="main-navigation-list">
@@ -31,75 +31,77 @@
 							<a class="main-navigation-link" href="#">Гостиницы</a>
 						</li>
 					</ul>
-				</nav>
-			</div>
+				</nav><!--end main-navigation-->
+			</div><!--end container-->
 		</header>
 
 		<main>
 			<div class="container">
-				<div class="catalog-top-block">
+				<div class="catalog-hotel-choose">
 					<form class="hotel-choose" action="" method="get">
 						<div class="hotel-choose-infrastructure">
 							<p class="hotel-choose-headline">Инфраструктура:</p>
 							<label>
-								Бассейн<input type="checkbox" name="pool">
+								<input type="checkbox" name="pool" value="1">Бассейн
 							</label><br>
 							<label>
-								Парковка<input type="checkbox" name="parking">
+								<input type="checkbox" name="parking" value="1">Парковка
 							</label><br>
 							<label>
-								Wi-Fi<input type="checkbox" name="wifi">
+								<input type="checkbox" name="wifi" value="1">Wi-Fi
 							</label>
 						</div>
+
 						<div class="hotel-choose-renttype">
 							<p class="hotel-choose-headline">Тип жилья:</p>
 							<label>
-								Гостиница<input type="checkbox" name="hotel">
+								<input type="checkbox" name="hotel" value="1">Гостиница
 							</label><br>
 							<label>
-								Мотель<input type="checkbox" name="motel">
+								<input type="checkbox" name="motel" value="1">Мотель
 							</label><br>
 							<label>
-								Апартаменты<input type="checkbox" name="apartment">
+								<input type="checkbox" name="apartment" value="1">Апартаменты
 							</label>
 						</div>
+						
 						<div class="hotel-choose-show">
 							<p class="hotel-choose-headline">Стоимость в сутки (р):</p>
 							<button class="hotel-choose-show-button" type="submit">Показать</button>
 						</div>
-					</form>
-				</div>
+					</form><!--hotel-choose-->
+				</div><!--end catalog-hotel-choose-->
 
-				<div class="catalog-bottom-block">
+				<div class="catalog-hotel-results">
 					<form class="sorting" action="" method="get">
 						<div class="sorting-options">
 							<p class="sorting-variants-number">Найдено:</p>
 							<p class="sorting-variants-items">Сортировка:</p>
 							<label>
-								По цене<input type="checkbox" name="sorting-price">
+								<input type="radio" value="sorting-price">По цене
 							</label><br>
 							<label>
-								По типу<input type="checkbox" name="sorting-type">
+								<input type="radio" value="sorting-type">По типу
 							</label><br>
 							<label>
-								По рейтингу<input type="checkbox" name="sorting-rating">
+								<input type="radio" value="sorting-rating">По рейтингу
 							</label>
 						</div>
 
 						<div class="sorting-buttons">
-							<span class="sorting-up-button">Стрелка вверх</span>
-							<span class="sorting-down-button">Стрелка вниз</span>
+							<span class="sorting-up-button"><!--Стрелка вверх--></span>
+							<span class="sorting-down-button"><!--Стрелка вниз--></span>
 						</div>
-					</form>
+					</form><!--sorting-->
 
-					<div class="hotel">
+					<div class="hotels">
 						<article class="hotel-item">
-							<div class="hotel-item-image">
+							<div class="hotel-item-info">
 								<img  class="hotel-item-img" src="http://placehold.it/220x170" width="220" height="170" alt="Amara resort & spa">
 							</div>
 
 							<div class="hotel-item-description">
-								<h2 class="hotel-item-name">Amara resort and spa</h2>
+								<h2 class="hotel-item-name">Amara resort &amp; spa</h2>
 								<p class="hotel-item-price">от 3500 р.</p>
 								<p class="hotel-item-type">Гостиница</p>
 								<a class="hotel-item-button-more">Подробнее</a>
@@ -107,7 +109,7 @@
 							</div>
 							
 							<div class="hotel-item-rating">
-								<p class="hotel-item-rating">Рейтинг: 8,5</p>
+								<p class="hotel-item-rating-number">Рейтинг: 8,5</p>
 								<span><!--Звездочка--></span>
 								<span><!--Звездочка--></span>
 								<span><!--Звездочка--></span>
@@ -117,7 +119,7 @@
 						</article>
 
 						<article class="hotel-item">
-							<div class="hotel-item-image">
+							<div class="hotel-item-info">
 								<img  class="hotel-item-img" src="http://placehold.it/220x170" width="220" height="170" alt="">
 							</div>
 
@@ -130,7 +132,7 @@
 							</div>
 
 							<div class="hotel-item-rating">
-								<p class="hotel-item-rating">Рейтинг: 8,9</p>
+								<p class="hotel-item-rating-number">Рейтинг: 8,9</p>
 								<span><!--Звездочка--></span>
 								<span><!--Звездочка--></span>
 								<span><!--Звездочка--></span>
@@ -140,7 +142,7 @@
 						</article>
 
 						<article class="hotel-item">
-							<div class="hotel-item-image">
+							<div class="hotel-item-info">
 								<img  class="hotel-item-img" src="http://placehold.it/220x170" width="220" height="170" alt="Villas at Poco Diablo">
 							</div>
 
@@ -153,7 +155,7 @@
 							</div>
 
 							<div class="hotel-item-rating">
-								<p class="hotel-item-rating">Рейтинг: 9,2</p>
+								<p class="hotel-item-rating-number">Рейтинг: 9,2</p>
 								<span><!--Звездочка--></span>
 								<span><!--Звездочка--></span>
 								<span><!--Звездочка--></span>
@@ -161,9 +163,9 @@
 								<span><!--Звездочка--></span>
 							</div>
 						</article>
-					</div>
-				</div>
-			</div>
+					</div><!--end hotels-->
+				</div><!--end catalog-hotel-results-->
+			</div><!--end container-->
 		</main>
 
 		<footer>
