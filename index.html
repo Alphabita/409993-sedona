@@ -12,25 +12,30 @@
 	<body>
 
 		<header class="main-header">
-			<div class="container">
+			<div class="container clearfix">
 				<div class="header-logo">
 					<img src="img/logo.png" width="138" height="70" alt="Седона &ndash; туристический рай Аризоны">
 				</div><!--logo-->
 
 				<nav class="main-navigation">
 					<ul class="main-navigation-list">
-						<li class="main-navigation-item">
-							<a class="main-navigation-link" href="#">Информация</a>
-						</li>
-						<li class="main-navigation-item">
-							<a class="main-navigation-link" href="#">Фото и видео</a>
-						</li>
-						<li class="main-navigation-item">
-							<a class="main-navigation-link" href="#">Карта штата</a>
-						</li>
-						<li class="main-navigation-item">
-							<a class="main-navigation-link" href="#">Гостиницы</a>
-						</li>
+						<div class="main-navigation-item-left">
+							<li class="main-navigation-item">
+								<a class="main-navigation-link-info" href="#">Информация</a>
+							</li>
+							<li class="main-navigation-item">
+								<a class="main-navigation-link-fotovideo" href="#">Фото и видео</a>
+							</li>
+						</div>
+						
+						<div class="main-navigation-item-right">
+							<li class="main-navigation-item">
+								<a class="main-navigation-link-map" href="#">Карта штата</a>
+							</li>
+							<li class="main-navigation-item">
+								<a class="main-navigation-link-hotels" href="#">Гостиницы</a>
+							</li>
+						</div>
 					</ul>
 				</nav>
 			</div><!--end container-->
@@ -49,71 +54,74 @@
 					</div>
 				</div>
 
-				<section class="reason-foto">
-					<div class="reason-foto-text">
+				<section class="reason-foto-top">
+					<div class="reason-foto-text-left">	
 						<b class="reason-foto-name">Настоящий городок</b>
-						<p>№1</p>
-						<p>Седона &ndash; не аттракцион для туристов, там течет своя жизнь</p>
+						<p class="reason-foto-number">-№1-</p>
+						<p class="reason-foto-description">Седона &ndash; не аттракцион для туристов, там течет своя жизнь</p>
 					</div>
 
-					<div class="reason-foto-image">
+					<div class="reason-foto-image-right">
 						<img src="img/mainfoto1.jpg" width="800" height="256" alt="Чудесный вид Седоны"> 
 					</div>
 				</section>
 
-				<section class="reason-features-list">
-					<div class="reason-feature-item">
+				<section class="reason-features-list-items">
+					<div class="reason-feature-item-home">
 						<b class="reason-feature-name">Жилье</b>
 						<p class="reason-feature-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
 					</div>
 
-					<div class="reason-feature-item">
+					<div class="reason-feature-item-food">
 						<b class="reason-feature-name">Еда</b>
 						<p class="reason-feature-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 					</div>
 
-					<div class="reason-feature-item">
+					<div class="reason-feature-item-souvenirs">
 						<b class="reason-feature-name">Сувениры</b>
 						<p class="reason-feature-text">Не только китайского, но и местного производства!</p>
 					</div>
 				</section>
 
-				<section class="reason-foto">
-					<div class="reason-foto-text">
+				<section class="reason-foto-bottom">
+					<div class="reason-foto-text-right">
 						<b class="reason-foto-name">Там есть мост дьявола</b>
-						<p>№2</p>
-						<p>Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
+						<p class="reason-foto-number">-№2-</p>
+						<p class="reason-foto-description">Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
 					</div>
 
-					<div class="reason-foto-image">
+					<div class="reason-foto-image-left">
 						<img src="img/mainfoto2.jpg" width="800" height="256" alt="Мост дьявола в Седоне">
 					</div>
 				</section>
 
-				<section class="reason-features-list">
-					<div class="reason-feature-item">
+				<section class="reason-features-list-numbers">
+					<div class="reason-feature-item-area">
 						<b class="reason-feature-name">Небольшая площадь</b>
-						<p class="reason-feature-text">№3</p>
+						<p class="reason-feature-text">-№3-</p>
 						<p class="reason-feature-text">Все достопримечательности находятся очень близко</p>
 					</div>
 
-					<div class="reason-feature-item">
+					<div class="reason-feature-item-road">
 						<b class="reason-feature-name">Красивая дорога</b>
-						<p class="reason-feature-text">№4</p>
+						<p class="reason-feature-text">-№4-</p>
 						<p class="reason-feature-text">Ехать в Седону из Лас&ndash;Вегаса совсем не скучно!</p>
 					</div>
 
-					<div class="reason-feature-item">
+					<div class="reason-feature-item-tourists">
 						<b class="reason-feature-name">Мало туристов</b>
-						<p class="reason-feature-text">№5</p>
+						<p class="reason-feature-text">-№5-</p>
 						<p class="reason-feature-text">Большинство едет в Гранд&ndash;Каньон, и толпится там</p>
 					</div>
 				</section>
 
 				<div class="hotel-booking">
-					<p class="hotel-booking-headline">Заинтересовались?</p>
-					<p class="hotel-booking-info">Укажите предполагаемые даты поездки, а мы покажем вам лучшие предложения гостиниц в Седоне</p>
-					<button class="hotel-booking-button" type="submit">Поиск гостиницы а Седоне</button>
+					<div class="hotel-booking-text">
+						<p class="hotel-booking-headline">Заинтересовались?</p>
+						<p class="hotel-booking-info">Укажите предполагаемые даты поездки,<br>
+						а мы покажем вам лучшие предложения гостиниц в Седоне</p>
+					</div>
+					<button class="hotel-booking-button" type="submit">Поиск гостиницы в Седоне</button>
 				</div>
 
 				<div class="sedona-map">
@@ -127,7 +135,7 @@
 		<footer>
 			<div class="container">
 
-				<section class="footer-teg">
+				<section class="footer-tag">
 					<p>#visitsedona</p>
 				</section>
 
@@ -143,10 +151,10 @@
 			</div><!--end container-->				
 		</footer>
 
-			<form class="find-hotel">
+			<!--<form class="find-hotel">
 				<p class="find-hotel-text">Поиск гостиницы в Седоне</p>
 				<button class="find-hotel-button" type="submit">Найти</button>
-			</form>
+			</form>-->
 
 	</body>
 

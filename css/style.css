@@ -4,9 +4,308 @@ body {
 	color: #000000;
 	font-weight: normal;
 	font-family: "PTSans";
+	width: 1280px;
 }
 
-.hotel-item-name{
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 40px;
+}
+
+.header-logo {
+	position: absolute;
+	width: 138px;
+	height: 70px;
+	left: 584px;/*здесь и справа заложена ширина 2 кнопок навигации + отступы от кнопок до лого справа и слева: 531+53*/;
+	right: 584px;
+}
+
+.main-navigation-item-left {
+	float: left;
+	width: 531px;
+	min-height: 56px;
+	text-transform: uppercase; /*При наличии uppercase текст на кнопках не умещается по ширине. Уменьшила размер шрифта на 3 px*/
+	/*margin-right: 53px;*/
+}
+
+.main-navigation-item-right {
+	float: right;
+	width: 531px;
+	min-height: 56px;
+	text-transform: uppercase;
+}
+
+.main-navigation-item-left .main-navigation-item {
+	float: left;
+	width: 239px;
+	background: #ffffff; 
+	color: #000000;
+	text-align: center;
+}
+
+.main-navigation-link-info {
+	padding: 22px 74px 22px 71px;
+	font-size: 11px;
+	line-height: 26px;
+	color: #000000;
+	font-weight: bold;
+	font-family: "PTSans";
+}
+
+.main-navigation-link-fotovideo {
+	padding: 22px 69px 22px 73px;
+	font-size: 11px;
+	line-height: 26px;
+	color: #000000;
+	font-weight: bold;
+	font-family: "PTSans";
+}
+
+.main-navigation-item-right .main-navigation-item {
+	float: right;
+	width: 239px;
+	background-color: #ffffff; 
+	color: #000000;
+	text-align: center;
+}/*перепутаны местами две кнопки навигации. Сначала должныа идти Карта штата, потом Гостиницы. У меня наоборот. Пока не знаю, как поправить*/
+
+.main-navigation-link-map {
+	padding: 22px 74px 22px 76px;
+	font-size: 11px;
+	line-height: 26px;
+	color: #000000;
+	font-weight: bold;
+	font-family: "PTSans";
+}
+
+.main-navigation-link-hotels {
+	padding: 22px 73px 22px 88px;
+	font-size: 11px;
+	line-height: 26px;
+	color: #000000;
+	font-weight: bold;
+	font-family: "PTSans";
+}
+
+.promo-image {
+	width: 1200px;
+	margin-bottom: 65px;
+}
+
+.promo-text {
+	width: 1200px;
+	padding-bottom: 57px;
+	background-color: #ffffff;
+	font-family: "PTSans";
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.promo-text-slogan {
+	font-weight: normal;
+	font-size: 21px;
+	line-height: 26px;
+	color: #000000;
+}
+
+.promo-text-reasons {
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 26px;
+	color: #333333;
+}
+
+.reason-foto-top {
+	width: 1200px;	
+}
+
+.reason-foto-text-left {
+	width: 308px;/*400px;*/
+	height: 166px;/*256px;*/
+	padding: 50px 46px 40px;
+	float: left;
+	background-color: #81b3d2;
+	color: #ffffff;
+	font-family: "PTSans";
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.reason-foto-name {
+	font-weight: bold;
+	font-size: 21px;
+	line-height: 21px;
+}
+
+.reason-foto-number,
+.reason-foto-description {
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.reason-foto-image-right {
+	width: 800px;
+	height: 256px;
+	float: right;
+}
+
+.reason-features-list-items {
+	width: 1200px;
+}
+
+.reason-feature-item-home {
+	width: 304px;
+	height: 270px;
+	float: left;
+	margin: 60px 92px 0 47px;
+}
+
+.reason-feature-item-food {
+	width: 314px;
+	height: 270px;
+	float: left;
+	margin: 60px 97px 0 0;
+}
+
+.reason-feature-item-souvenirs {
+	width: 293px;
+	height: 270px;
+	float: right;
+	margin: 60px 53px 0 0;
+}
+
+.reason-foto-bottom {
+	width: 1200px;
+}
+
+.reason-foto-bottom .reason-foto-text-right {
+	width: 304px; /*400px*/
+	height: 166px; /*256px*/
+	padding: 49px 48px 41px;
+	float: right;
+	background-color: #81b3d2;
+	color: #ffffff;
+	font-family: "PTSans";
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.reason-foto-bottom .reason-foto-image-left {
+	width: 800px;
+	height: 256px;
+	float: left;
+}
+
+.reason-features-list-numbers {
+	width: 1200px;
+	background-color: #eeeeee;
+	text-align: center;
+}
+
+.reason-feature-item-area {
+	width: 313px;
+	height: 169px;
+	float: left;
+	margin: 50px 44px 40px 42px;
+}
+
+.reason-feature-item-road {
+	width: 306px;
+	height: 169px;
+	float: left;
+	margin: 50px 47px 40px;
+}
+
+.reason-feature-item-tourists {
+	width: 295px;
+	height: 169px;
+	float: left;
+	margin: 50px 53px 40px;
+}
+
+.reason-feature-name {
+	font-weight: bold;
+	font-size: 21px;
+	line-height: 21px;
+	color: #000000;
+}
+
+.reason-feature-text,
+.hotel-booking-info {
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 21px;
+	color: #333333;
+	text-transform: uppercase;
+}
+
+.hotel-booking {
+	width: 1200px;
+	text-align: center;
+}
+
+.hotel-booking-headline {
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 24px;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.hotel-booking-button {
+	width: 568px;
+	height: 86px;
+	margin-left: 316px;
+	margin-right: 316px;
+	padding: 35px 140px 33px;
+	background-color: #766357;
+	color: #ffffff;
+	font-weight: bold;
+	font-family: "PTSans";
+	font-size: 21px;
+	line-height: 26px;
+	text-transform: uppercase;
+}
+
+.sedona-map {
+	width: 1200px;
+}
+
+.footer-tag {
+	width: 135px;
+	min-height: 23px;
+	margin: 51px 256px 54px 132px;
+	float: left;
+	font-size: 21px;
+	line-height: 26px;
+	color: #000000;
+	font-weight: bold;
+	font-family: "PTSans";
+}
+
+.footer-social {
+	width: 150px;
+	min-height: 48px;
+	margin: 36px 0;
+	float: left;
+}
+
+.footer-copyright {
+	width: 193px;
+	min-height: 39px;
+	margin: 41px 103px 40px 229px;
+	float: right;
+}
+
+.hotel-item-name {
 	font-size: 21px;
 	line-height: 26px;
 	color: #000000;
