@@ -4,7 +4,6 @@ body {
 	color: #000000;
 	font-weight: normal;
 	font-family: "PTSans";
-	width: 1280px;
 }
 
 .clearfix::after {
@@ -17,118 +16,90 @@ body {
 	width: 1200px;
 	margin: 0 auto;
 	padding: 0 40px;
+	position: static;
 }
 
 .header-logo {
 	position: absolute;
 	width: 138px;
 	height: 70px;
-	left: 584px;/*здесь и справа заложена ширина 2 кнопок навигации + отступы от кнопок до лого справа и слева: 531+53*/;
+	left: 584px;
 	right: 584px;
-}
+} /*logo in main navigation*/
 
-.main-navigation-item-left {
+.main-navigation-item-info {
 	float: left;
-	width: 531px;
-	min-height: 56px;
-	text-transform: uppercase; /*При наличии uppercase текст на кнопках не умещается по ширине. Уменьшила размер шрифта на 3 px*/
-	/*margin-right: 53px;*/
-}
+	padding: 22px 74px 0px 71px;
+	font-size: 14px;
+	line-height: 26px;
+	color: #000000;
+	background-color: #ffffff;
+	font-weight: bold;
+	font-family: "PTSans";
+} /*information button in main navigation*/
 
-.main-navigation-item-right {
-	float: right;
-	width: 531px;
-	min-height: 56px;
-	text-transform: uppercase;
-}
-
-.main-navigation-item-left .main-navigation-item {
+.main-navigation-item-fotovideo {
 	float: left;
-	width: 239px;
-	background: #ffffff; 
-	color: #000000;
-	text-align: center;
-}
-
-.main-navigation-link-info {
-	padding: 22px 74px 22px 71px;
-	font-size: 11px;
+	padding: 22px 69px 0px 73px;
+	font-size: 14px;
 	line-height: 26px;
 	color: #000000;
+	background-color: #ffffff;
 	font-weight: bold;
 	font-family: "PTSans";
-}
+} /*fotogallery button in main navigation*/
 
-.main-navigation-link-fotovideo {
-	padding: 22px 69px 22px 73px;
-	font-size: 11px;
-	line-height: 26px;
-	color: #000000;
-	font-weight: bold;
-	font-family: "PTSans";
-}
-
-.main-navigation-item-right .main-navigation-item {
+.main-navigation-item-map {
 	float: right;
-	width: 239px;
-	background-color: #ffffff; 
-	color: #000000;
-	text-align: center;
-}/*перепутаны местами две кнопки навигации. Сначала должныа идти Карта штата, потом Гостиницы. У меня наоборот. Пока не знаю, как поправить*/
-
-.main-navigation-link-map {
-	padding: 22px 74px 22px 76px;
-	font-size: 11px;
+	padding: 22px 74px 0px 76px;
+	font-size: 14px;
 	line-height: 26px;
 	color: #000000;
+	background-color: #ffffff;
 	font-weight: bold;
 	font-family: "PTSans";
-}
+} /*statemap button in main navigation*/
 
-.main-navigation-link-hotels {
-	padding: 22px 73px 22px 88px;
-	font-size: 11px;
+.main-navigation-item-hotels {
+	float: right;
+	padding: 22px 73px 0px 88px;
+	font-size: 14px;
 	line-height: 26px;
 	color: #000000;
+	background-color: #ffffff;
 	font-weight: bold;
 	font-family: "PTSans";
-}
+} /*hotels button in ain navigation*/
 
 .promo-image {
-	width: 1200px;
 	margin-bottom: 65px;
-}
+} /*big image in the top of main and under the navigation*/
 
 .promo-text {
-	width: 1200px;
 	padding-bottom: 57px;
 	background-color: #ffffff;
 	font-family: "PTSans";
 	text-align: center;
 	text-transform: uppercase;
-}
+} /*text block under the big image mentioned above*/
 
 .promo-text-slogan {
 	font-weight: normal;
 	font-size: 21px;
 	line-height: 26px;
 	color: #000000;
-}
+} /*text: Седона &ndash; небольшой городок в Аризоне*/
 
 .promo-text-reasons {
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 26px;
 	color: #333333;
-}
-
-.reason-foto-top {
-	width: 1200px;	
-}
+} /*text:Расмотрим 5 причин, по которым*/
 
 .reason-foto-text-left {
-	width: 308px;/*400px;*/
-	height: 166px;/*256px;*/
+	width: 308px;
+	min-height: 166px;
 	padding: 50px 46px 40px;
 	float: left;
 	background-color: #81b3d2;
@@ -136,59 +107,56 @@ body {
 	font-family: "PTSans";
 	text-align: center;
 	text-transform: uppercase;
-}
+} /*text of top blue colored block*/
 
 .reason-foto-name {
 	font-weight: bold;
 	font-size: 21px;
 	line-height: 21px;
-}
+} /*text: Настоящий городок*/
 
 .reason-foto-number,
 .reason-foto-description {
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 21px;
-}
+} /*text: -№1-Седона &ndash; не аттракцион для... + -№2-Да, по нему можно пройти...*/
 
 .reason-foto-image-right {
 	width: 800px;
 	height: 256px;
 	float: right;
-}
+} /*image near the text block mentioned above*/
 
 .reason-features-list-items {
-	width: 1200px;
-}
+	background-color: #ffffff;
+	text-align: center;
+} /*include 3 blocks mentioned below*/
 
 .reason-feature-item-home {
 	width: 304px;
-	height: 270px;
+	min-height: 270px;
 	float: left;
 	margin: 60px 92px 0 47px;
-}
+} /*block Жилье*/
 
 .reason-feature-item-food {
 	width: 314px;
-	height: 270px;
+	min-height: 270px;
 	float: left;
 	margin: 60px 97px 0 0;
-}
+} /*block Еда*/
 
 .reason-feature-item-souvenirs {
 	width: 293px;
-	height: 270px;
+	min-height: 270px;
 	float: right;
 	margin: 60px 53px 0 0;
-}
+} /*block Сувениры*/
 
-.reason-foto-bottom {
-	width: 1200px;
-}
-
-.reason-foto-bottom .reason-foto-text-right {
-	width: 304px; /*400px*/
-	height: 166px; /*256px*/
+.reason-foto-text-right {
+	width: 304px; 
+	min-height: 166px; 
 	padding: 49px 48px 41px;
 	float: right;
 	background-color: #81b3d2;
@@ -196,47 +164,45 @@ body {
 	font-family: "PTSans";
 	text-align: center;
 	text-transform: uppercase;
-}
+} /*text of bottom blue colored block*/
 
-.reason-foto-bottom .reason-foto-image-left {
+.reason-foto-image-left {
 	width: 800px;
 	height: 256px;
 	float: left;
-}
+} /*image near the text block mentioned above*/
 
 .reason-features-list-numbers {
-	width: 1200px;
-	background-color: #eeeeee;
 	text-align: center;
-}
+} /*include 3 blocks mentioned below*/
 
 .reason-feature-item-area {
 	width: 313px;
-	height: 169px;
+	min-height: 169px;
 	float: left;
 	margin: 50px 44px 40px 42px;
-}
+} /*block Небольшая площадь*/
 
 .reason-feature-item-road {
 	width: 306px;
-	height: 169px;
+	min-height: 169px;
 	float: left;
 	margin: 50px 47px 40px;
-}
+} /*block Красивая дорога*/
 
 .reason-feature-item-tourists {
 	width: 295px;
-	height: 169px;
+	min-height: 169px;
 	float: left;
 	margin: 50px 53px 40px;
-}
+} /*block Мало туристов*/
 
 .reason-feature-name {
 	font-weight: bold;
 	font-size: 21px;
 	line-height: 21px;
 	color: #000000;
-}
+} /*text for headers of reccomendations and features. Example: Жилье Еда Небольшая площадь*/
 
 .reason-feature-text,
 .hotel-booking-info {
@@ -245,12 +211,11 @@ body {
 	line-height: 21px;
 	color: #333333;
 	text-transform: uppercase;
-}
+} /*text of reccomendations and features. Example: Рекомендуем пожить в настоящем мотеле or -№3- or Большинство едет в Гранд&ndash;Каньон or Укажите предполагаемые даты */
 
 .hotel-booking {
-	width: 1200px;
 	text-align: center;
-}
+} /*block include text: Заинтересовались? and button of the hotel search*/
 
 .hotel-booking-headline {
 	font-weight: bold;
@@ -258,11 +223,11 @@ body {
 	line-height: 24px;
 	color: #000000;
 	text-transform: uppercase;
-}
+} /*text: Заинтересовались?*/
 
 .hotel-booking-button {
 	width: 568px;
-	height: 86px;
+	min-height: 86px;
 	margin-left: 316px;
 	margin-right: 316px;
 	padding: 35px 140px 33px;
@@ -273,37 +238,73 @@ body {
 	font-size: 21px;
 	line-height: 26px;
 	text-transform: uppercase;
-}
+} /*button of the hotel search*/
 
-.sedona-map {
-	width: 1200px;
-}
+.map-image {
+	margin-bottom: 36px;
+} /*map image in the bottom*/
 
 .footer-tag {
-	width: 135px;
-	min-height: 23px;
-	margin: 51px 256px 54px 132px;
+	width: 400px;
+	min-height: 120px;
 	float: left;
+	text-align: center;
+} /*include 1 block mentioned below*/
+
+.footer-tag-text {
 	font-size: 21px;
 	line-height: 26px;
 	color: #000000;
 	font-weight: bold;
 	font-family: "PTSans";
-}
+} /*text: #visitsedona*/
 
 .footer-social {
-	width: 150px;
-	min-height: 48px;
-	margin: 36px 0;
+	width: 400px;
+	min-height: 120px;
 	float: left;
-}
+	text-align: center;
+} /*include block class=social-btn mentioned below*/
+
+.social-btn {
+	display: inline-block;
+	vertical-align: middle;
+} /*include 2 blocks mentioned below*/
+
+.social-btn-vk,
+.social-btn-fb,
+.social-btn-youtube {
+	width: 46px;
+	min-height: 48px;
+	background-color: #81b3d2;
+	color: #ffffff;
+} /*text: vk fb utube*/
 
 .footer-copyright {
-	width: 193px;
-	min-height: 39px;
-	margin: 41px 103px 40px 229px;
+	width: 400px;
+	min-height: 120px;
 	float: right;
-}
+	text-align: center;
+} /*include block class=copyright mentioned below*/
+
+.copyright {
+	display: inline-block;
+	vertical-align: middle;
+} /*include 2 blocks mentioned below*/
+
+.footer-copyright-text {
+	color: #000000;
+	font-weight: normal;
+	font-family: "PTSans";
+	font-size: 14px;
+	line-height: 26px;
+	text-transform: uppercase;
+} /*text: website by*/
+
+.footer-copyright-logo {
+	width: 113px;
+	height: 39px;
+} /*image of developers logo*/
 
 .hotel-item-name {
 	font-size: 21px;
