@@ -36,10 +36,10 @@ body {
 	position: absolute;
 	z-index:3;
 	right: 584px;
-	left: 584px;
+	left: 571px;
 	width: 138px;
 	height: 70px;
-} /*logo in main navigation*/
+} 
 
 .main-navigation ul {
 	margin: 0;
@@ -57,47 +57,50 @@ body {
 
 .main-navigation-item-info {
 	float: left;
-	padding: 22px 74px 0px 71px;
-} /*information button in main navigation*/
+	padding: 14px 74px 0px 71px;
+} 
 
 .main-navigation-item-photovideo {
 	float: left;
-	padding: 22px 69px 0px 73px;
-} /*photogallery button in main navigation*/
+	padding: 14px 69px 0px 73px;
+} 
 
 .main-navigation-item-map {
 	float: right;
-	padding: 22px 74px 0px 76px;
-} /*statemap button in main navigation*/
+	padding: 14px 74px 0px 76px;
+} 
 
 .main-navigation-item-hotels {
 	float: right;
-	padding: 22px 73px 0px 88px;
-} /*hotels button in ain navigation*/
+	padding: 14px 73px 0px 88px;
+} 
 
 .promo-image {
 	z-index:1;
-} /*big image in the top of main and under the navigation*/
+	height: 509px;
+} 
 
 .promo-text {
-	padding: 65px 0 57px;
+	padding: 60px 0 37px;
 	text-align: center;
 	background-color: #ffffff;
-} /*text block under the big image mentioned above*/
+} 
 
 .promo-text-slogan {
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: 400;
 	color: #000000;
-} /*text: Седона &ndash; небольшой городок в Аризоне*/
+} 
 
 .promo-text-reasons {
+	padding: 26px 0 14px;
+	margin: 0;
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: 400;
 	color: #333333;
-} /*text:Расмотрим 5 причин, по которым*/
+} 
 
 .reason-photo-text-left {
 	float: left;
@@ -107,42 +110,66 @@ body {
 	text-align: center;
 	color: #ffffff;
 	background-color: #81b3d2;
-} /*text of top blue colored block*/
+} 
 
 .reason-photo-name {
 	font-size: 21px;
 	line-height: 21px;
 	font-weight: 700;
-} /*text: Настоящий городок*/
+} 
 
 .reason-photo-number,
 .reason-photo-description {
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: 400;
-} /*text: -№1-Седона &ndash; не аттракцион для... + -№2-Да, по нему можно пройти...*/
+} 
+
+.reason-photo-number {
+	padding: 20px 0 10px;
+	margin: 0;
+}
 
 .reason-photo-image-right {
 	float: right;
 	width: 800px;
 	height: 256px;
-} /*image near the text block mentioned above*/
+} 
 
 .reason-feature {
 	float: left;
 	width: 400px;
-	min-height: 191px;
 	text-align: center;
 }
 
 .gray {
-	padding: 49px 0 63px;
+	min-height: 191px;
+  padding: 49px 0 16px;
 	background-color: #eeeeee;
 }
 
 .white {
-	padding: 57px 0 86px;
+	min-height: 170px;
+  padding: 160px 0 0;
 	background-color: #ffffff;
+}
+
+.home-image {
+  background-image: url(../img/homelogo.png);
+  background-repeat: no-repeat;
+  background-position: 50% 24%;
+}
+
+.food-image {
+  background-image: url(../img/foodlogo.png);
+  background-repeat: no-repeat;
+  background-position: 50% 24%;
+}
+
+.souvenirs-image {
+  background-image: url(../img/giftlogo.png);
+  background-repeat: no-repeat;
+  background-position: 50% 24%;
 }
 
 .reason-photo-text-right {
@@ -153,64 +180,70 @@ body {
 	text-align: center;
 	color: #ffffff;
 	background-color: #81b3d2;	
-} /*text of bottom blue colored block*/
+} 
 
 .reason-photo-image-left {
 	float: left;
 	width: 800px;
 	height: 256px;
-} /*image near the text block mentioned above*/
+} 
 
 .reason-feature-name {
 	font-size: 21px;
 	line-height: 21px;
 	font-weight: 700;
 	color: #000000;
-} /*text for headers of reccomendations and features. Example: Жилье Еда Небольшая площадь*/
+} 
 
 .reason-feature-text,
 .hotel-booking-info {
+	padding: 22px 0 0;
 	margin: 0;
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: 400;
 	color: #333333;
-} /*text of reccomendations and features. Example: Рекомендуем пожить в настоящем мотеле or -№3- or Большинство едет в Гранд&ndash;Каньон or Укажите предполагаемые даты */
+} 
 
 .hotel-booking {
 	min-height: 292px;
 	text-align: center;
 	background-color: #ffffff;
-} /*block include text: Заинтересовались? and button of the hotel search*/
+} 
 
 .hotel-booking-headline {
-	padding: 57px 0 36px;
+	padding: 57px 0 10px;
 	margin: 0;
 	font-size: 30px;
 	line-height: 24px;
 	font-weight: 700;
 	color: #000000;
-} /*text: Заинтересовались?*/
+} 
 
 .hotel-booking-button {
-	padding: 35px 140px 33px;
+	/*padding: 35px 140px 33px;*/
 	margin: 50px 0 0;
 	width: 568px;
 	min-height: 86px;
 	font-size: 21px;
 	line-height: 26px;
 	font-family: "PT Sans";
+	text-transform: uppercase;
 	font-weight: 700;
 	color: #ffffff;
 	background-color: #766357;
-} /*button of the hotel search*/
+} 
+
+.sedona-map {
+  height: 593px;
+}
 
 .main-footer {
-	width: 1200px;
+  width: 1200px;
 	min-height: 121px;
-	padding: 36px 0 0;
+	padding: 475px 0 0;
 	color: #000000;
-	background-color: #ffffff;
+	background-image: url(../img/map.png);
 }
 
 .footer-tag {
@@ -218,54 +251,61 @@ body {
 	width: 400px;
 	min-height: 120px;
 	text-align: center;
-} /*include 1 block mentioned below*/
+  background-color: rgba(255,255,255,0.9);
+} 
 
 .footer-tag-text {
-	font-size: 21px;
+	padding: 20px 0 0;
+  font-size: 21px;
 	line-height: 26px;
 	font-weight: 700;
 	color: #000000;	
-} /*text: #visitsedona*/
+} 
 
 .footer-social {
 	float: left;
 	width: 400px;
 	min-height: 120px;
 	text-align: center;
-} /*include block class=social-btn mentioned below*/
+  background-color: rgba(255,255,255,0.9);
+} 
 
 .social-btn {
 	display: inline-block;
 	vertical-align: middle;
 	width: 46px;
 	min-height: 48px;
+  margin: 32px 0 0;
 	color: #ffffff;
 	background-color: #81b3d2;
-} /*include 2 blocks mentioned below*/
+} 
 
 .footer-copyright {
 	float: right;
 	width: 400px;
 	min-height: 120px;
 	text-align: center;
-} /*include block class=copyright mentioned below*/
+  background-color: rgba(255,255,255,0.9);
+} 
 
 .copyright {
 	display: inline-block;
 	vertical-align: middle;
-} /*include 2 blocks mentioned below*/
+} 
 
 .footer-copyright-text {
-	font-size: 14px;
+	padding: 27px 0 0;
+  font-size: 14px;
 	line-height: 26px;
 	font-weight: 400;
 	color: #000000;
-} /*text: website by*/
+} 
 
 .footer-copyright-logo {
 	width: 113px;
 	height: 39px;
-} /*image of developers logo*/
+  padding: 27px 0 0;
+} 
 
 .hotel-item-name {
 	font-size: 21px;
