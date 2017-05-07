@@ -15,37 +15,40 @@ body {
 	content: "";
 	display: table;
 	clear: both;
-}
+} /*распорка*/
 
 .container {
 	position: relative;
 	width: 1200px;
 	margin: 0 auto;
 	padding: 0 40px;
-}
+} /*контейнер центровщик*/
 
 .main-navigation {
 	z-index:2;
 	width: 1200px;
-	min-height: 56px;
 	color: #000000;
 	background-color: #ffffff;
-}
+} /*плашка основной навигации в хедере*/
 
 .header-logo {
 	position: absolute;
-	z-index:3;
+	z-index:4;
 	right: 584px;
 	left: 571px;
 	width: 138px;
 	height: 70px;
-} 
+} /*логотип в хедере*/
 
 .main-navigation ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-}
+} /*список с пунктами основной навигации*/
+
+.main-navigation li {
+	padding: 15px 73px;
+} /*пункты основной навигации*/
 
 .main-navigation a {
 	font-size: 14px;
@@ -53,45 +56,34 @@ body {
 	font-weight: 700;
 	color: #000000;
 	text-decoration: none;
-}
+} /*текст + ссылки пунктов основной навигации*/
 
-.main-navigation-item-info {
-	float: left;
-	padding: 14px 74px 0px 71px;
-} 
-
+.main-navigation-item-info,
 .main-navigation-item-photovideo {
 	float: left;
-	padding: 14px 69px 0px 73px;
-} 
+} /*первы два пункта основной навигации*/
 
-.main-navigation-item-map {
-	float: right;
-	padding: 14px 74px 0px 76px;
-} 
-
+.main-navigation-item-map,
 .main-navigation-item-hotels {
 	float: right;
-	padding: 14px 73px 0px 88px;
-} 
+} /*вторые два пункта основной навигации*/
 
 .promo-image {
-	z-index:1;
 	height: 509px;
-} 
+} /*изображение с надписью Welcome to Sedona*/
 
 .promo-text {
 	padding: 60px 0 37px;
 	text-align: center;
 	background-color: #ffffff;
-} 
+} /*Блок текста под изображением (см. правило выше)*/
 
 .promo-text-slogan {
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: 400;
 	color: #000000;
-} 
+} /*Текст: Седона - небольшой городок в Аризоне...*/
 
 .promo-text-reasons {
 	padding: 26px 0 14px;
@@ -100,100 +92,95 @@ body {
 	line-height: 26px;
 	font-weight: 400;
 	color: #333333;
-} 
+} /*Текст: Рассмотрим 5 причин...*/
 
 .reason-photo-text-left {
 	float: left;
 	width: 308px;
-	min-height: 166px;
-	padding: 50px 46px 40px;
+	padding: 50px 46px 43px;
 	text-align: center;
 	color: #ffffff;
 	background-color: #81b3d2;
-} 
+} /*Блок текста расположенного на верхней голубой плашке*/
+
+.reason-photo-image-right {
+	float: right;
+	width: 800px;
+	height: 256px;
+} /*Изображение рядом с текстом "Настоящий городок..."*/
+
+.reason-photo-text-right {
+	float: right;
+	padding: 50px 46px 43px;
+	width: 308px;  
+	text-align: center;
+	color: #ffffff;
+	background-color: #81b3d2;	
+} /*Блок текста расположенного на нижней голубой плашке*/
+
+.reason-photo-image-left {
+	float: left;
+	width: 800px;
+	height: 256px;
+} /*Изображение рядом с текстом "Там есть мост дьявола..."*/
 
 .reason-photo-name {
 	font-size: 21px;
 	line-height: 21px;
 	font-weight: 700;
-} 
+} /*Текст: Настоящий городок... Там есть мост...*/
 
 .reason-photo-number,
 .reason-photo-description {
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: 400;
-} 
+} /*Правило для текста: №1 Седона не аттракцион... №2 Да, по нему можно пройтись*/
 
 .reason-photo-number {
 	padding: 20px 0 10px;
 	margin: 0;
-}
-
-.reason-photo-image-right {
-	float: right;
-	width: 800px;
-	height: 256px;
-} 
+} /*Дополнительное правило для текста: №1 №2*/
 
 .reason-feature {
 	float: left;
 	width: 400px;
 	text-align: center;
-}
+} /*Правила для блоков: Жилье-Еда-Сувениры + Небольшая площадь-Красивая дорога-Мало туристов*/
 
 .gray {
-	min-height: 191px;
-  padding: 49px 0 16px;
+  padding: 49px 0 58px;
 	background-color: #eeeeee;
-}
+} /* Доп. правила для блоков: Небольшая площадь-Красивая дорога-Мало туристов*/
 
 .white {
-	min-height: 170px;
-  padding: 160px 0 0;
+  padding: 160px 0 85px;
 	background-color: #ffffff;
-}
+} /*Доп. правила для блоков: Жилье-Еда-Сувениры*/
+
+.image {
+	background-repeat: no-repeat;
+  background-position: 50% 24%;
+} /*Правила для изображений блоков: Жилье-Еда-Сувениры*/
 
 .home-image {
-  background-image: url(../img/homelogo.png);
-  background-repeat: no-repeat;
-  background-position: 50% 24%;
-}
+  background-image: url(../img/home-logo.png);
+} /*Изображение блока Жилье*/
 
 .food-image {
-  background-image: url(../img/foodlogo.png);
-  background-repeat: no-repeat;
-  background-position: 50% 24%;
-}
+  background-image: url(../img/food-logo.png);
+} /*Изображение блока Еда*/
 
 .souvenirs-image {
-  background-image: url(../img/giftlogo.png);
-  background-repeat: no-repeat;
-  background-position: 50% 24%;
-}
-
-.reason-photo-text-right {
-	float: right;
-	padding: 49px 48px 41px;
-	width: 304px; 
-	min-height: 166px; 
-	text-align: center;
-	color: #ffffff;
-	background-color: #81b3d2;	
-} 
-
-.reason-photo-image-left {
-	float: left;
-	width: 800px;
-	height: 256px;
-} 
+  background-image: url(../img/gift-logo.png);
+} /*Изображение блока Сувениры*/
 
 .reason-feature-name {
 	font-size: 21px;
 	line-height: 21px;
 	font-weight: 700;
 	color: #000000;
-} 
+} /*Заголовки блоков: Жилье-Еда-Сувениры + Небольшая площадь-Красивая дорога-Мало туристов*/
 
 .reason-feature-text,
 .hotel-booking-info {
@@ -203,13 +190,12 @@ body {
 	line-height: 21px;
 	font-weight: 400;
 	color: #333333;
-} 
+} /*Текст блоков: Жилье-Еда-Сувениры + Небольшая площадь-Красивая дорога-Мало туристов ++ текст: Укажите предполагаемые даты*/
 
 .hotel-booking {
-	min-height: 292px;
 	text-align: center;
 	background-color: #ffffff;
-} 
+} /*Блок поиска гостиницы: текст + кнопка*/
 
 .hotel-booking-headline {
 	padding: 57px 0 10px;
@@ -218,13 +204,12 @@ body {
 	line-height: 24px;
 	font-weight: 700;
 	color: #000000;
-} 
+} /*Заголовок блока поиска гостиницы. Текст: Заинтересовались?*/
 
 .hotel-booking-button {
-	/*padding: 35px 140px 33px;*/
+	padding: 30px 110px;
 	margin: 50px 0 0;
 	width: 568px;
-	min-height: 86px;
 	font-size: 21px;
 	line-height: 26px;
 	font-family: "PT Sans";
@@ -232,91 +217,228 @@ body {
 	font-weight: 700;
 	color: #ffffff;
 	background-color: #766357;
-} 
-
-.sedona-map {
-  height: 593px;
-}
+	border-style: none;
+} /*Кнопка блока поиска гостиницы*/
 
 .main-footer {
   width: 1200px;
-	min-height: 121px;
-	padding: 475px 0 0;
 	color: #000000;
+} /*Основоное правило для футера*/
+
+.map {
+	padding: 475px 0 0;
 	background-image: url(../img/map.png);
-}
+} /*Карта в футере*/
 
 .footer-tag {
 	float: left;
 	width: 400px;
-	min-height: 120px;
+	padding: 47px 0;
 	text-align: center;
   background-color: rgba(255,255,255,0.9);
-} 
+} /*Блок футера, содержащий тег*/
 
 .footer-tag-text {
-	padding: 20px 0 0;
+	margin: 0;
   font-size: 21px;
 	line-height: 26px;
 	font-weight: 700;
 	color: #000000;	
-} 
+} /*Текст: #VisitSedona*/
 
 .footer-social {
 	float: left;
 	width: 400px;
-	min-height: 120px;
+	padding: 36px 0;
 	text-align: center;
   background-color: rgba(255,255,255,0.9);
-} 
+} /*Блок футера, содержащий кнопки соц.сетей*/
 
 .social-btn {
 	display: inline-block;
 	vertical-align: middle;
 	width: 46px;
 	min-height: 48px;
-  margin: 32px 0 0;
 	color: #ffffff;
 	background-color: #81b3d2;
-} 
+} /*Правило для кнопок соц.сетей*/
 
 .footer-copyright {
 	float: right;
 	width: 400px;
-	min-height: 120px;
 	text-align: center;
   background-color: rgba(255,255,255,0.9);
-} 
+} /*Блок футера, содержащий лого разработчика*/
 
 .copyright {
 	display: inline-block;
 	vertical-align: middle;
-} 
+} /*Доп. правило для блога с логотипом разработчика*/
 
 .footer-copyright-text {
-	padding: 27px 0 0;
+	padding: 47px 0;
+  margin: 0;
   font-size: 14px;
 	line-height: 26px;
 	font-weight: 400;
 	color: #000000;
-} 
+} /*Текст: website by*/
 
 .footer-copyright-logo {
 	width: 113px;
-	height: 39px;
-  padding: 27px 0 0;
-} 
+	height: 40px;
+  padding: 40px 0;
+} /*Лого разработчика*/
+
+/*CATALOG-CSS*/
+
+.hotel-choose {
+  height: 218px;
+  z-index: 3;
+  background-image: url(../img/catalog-background-image.jpg)
+} /*Блок с параметрами выбора гостиницы*/
+
+.hotel-choose-infrastructure {
+  float: left;
+  width: 142px;
+  padding: 25px 86px 22px 72px;
+} /*Выбор параметров инфраструктуры*/
+
+.hotel-choose-renttype {
+  float: left;
+  width: 140px;
+  padding: 25px 135px 22px 25px;
+} /*Выбор типа жилья*/
+
+.hotel-choose-headline {
+  padding: 0 0 15px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #ffffff;
+} /*Текст: Инфраструктура + Тип жилья + Стоимость в сутки*/
+
+.hotel-choose-text {
+  font-size: 14px;
+  line-height: 45px;
+  font-weight: 400;
+  color: #ffffff;
+} /*Пункты списков: Инфраструктура + Тип жилья*/
+
+.hotel-price-slider {
+  float: right;
+  width: 600px;
+} /*Обертка для слайдера с заголовком и кнопкой*/
+
+.hotel-price-slider-headline {
+  padding: 25px 205px 10px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #ffffff;
+} /*Загоовок слайдера*/
+
+.hotel-price-slider-table {
+	margin: 0 210px 32px 73px;
+	padding: 10px 50px;
+	color: #ffffff;
+	border: 2px #ffffff;
+} /*Показатели цены слайдера*/
+
+.hotel-price-slider-button {
+  width: 133px;
+  padding: 7px 15px;
+  margin: 18px 168px 33px 297px;
+  font-size: 14px;
+	font-family: "PT Sans";
+	text-transform: uppercase;
+  color: #ffffff;
+  background-color: rgba(255,255,255,0);
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  text-decoration: none;
+} /*Кнопка слайдера*/
+
+.hotel-price-slider-button:hover,
+.hotel-price-slider-button:active {
+  background-color: #ffffff;
+  color: #000000;
+} /*Кнопка слайдера при наведении*/
+
+.sort,
+.hotel-item {
+	width: 1200px;
+	background-color: #ffffff;
+} /*Плашки для блоков сортировки и информации об отелях*/
+
+.sort-results {
+	float: left;
+	padding: 30px 45px 30px 73px;
+	font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+} /*Блок с текстом "Найдено"*/
+
+.sort-ation {
+	float: left;
+	padding: 35px 665px 35px 5px;
+} /*Блок с текстом "Сортировка" и кнопками-стрелками*/
+
+.sort-filter {
+	float: left;
+} /*Кнопки: по цене-по типу-по рейтингу */
+
+.sort-buttons {
+	float: right;
+} /*Кнопки-стрелки*/
+
+.hotel-item-photo {
+	float: left;
+	width: 166px;
+	padding: 30px 0 30px 55px;
+} /*Изображение отеля*/
+
+.hotel-item-description {
+	float: left;
+	width: 780px;
+	padding: 25px 0;
+} /*Полное описание отеля*/
 
 .hotel-item-name {
+	padding: 0 0 5px;
+	margin: 0;
 	font-size: 21px;
-	line-height: 26px;
 	font-weight: 700;
 	color: #000000;
-}
+} /*Название отеля*/
 
-.main-navigation-link{
+.hotel-item-info {
+	padding: 5px 24px 18px 0;
+	margin: 0;
 	font-size: 14px;
-	line-height: 26px;
-	font-weight: 700;
-	color: #000000;
-}
+	color: #333333;
+} /*Цена и тип отеля*/
+
+.hotel-item-button {
+	padding: 8px 15px;
+	color: #ffffff;
+	text-decoration: none;
+} /*Кнопки Подробнее-Забронировать*/
+
+.more-button {
+  background-color: #81b3d2;
+} /*Кнопка Подробнее*/
+
+.book-button {
+  background-color: #766357;
+} /*Кнопка Забронировать*/
+
+.hotel-item-rating {
+	float: right;
+	width: 184px;
+	padding: 30px 0;
+} /*Рейтинг отеля*/
+
+
