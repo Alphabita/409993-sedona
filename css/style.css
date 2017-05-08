@@ -220,6 +220,55 @@ body {
 	border-style: none;
 } /*Кнопка блока поиска гостиницы*/
 
+.find-hotel-form {
+	width: 460px;
+	padding: 54px 54px;
+	font-size: 14px;
+	line-height: 26px;
+	font-family: "PT Sans";
+	font-weight: 700;
+	text-align: center;
+	color: #000000;
+	background-color: #ffffff;
+}
+
+.find-hotel-date-parameter input {
+	width: 347px;
+	margin: 0 0 30px;
+	font-size: 14px;
+	line-height: 26px;
+	font-family: "PT Sans";
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #000000;
+	background-color: #f2f2f2;
+}
+
+.find-hotel-guest-parameter input {
+	width: 114px;
+	font-size: 14px;
+	line-height: 26px;
+	font-family: "PT Sans";
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #000000;
+	background-color: #f2f2f2;
+}
+
+.find-hotel-button {
+  padding: 20px 197px;
+	margin: 54px 0 0;
+  width: 460px;
+	font-size: 21px;
+	line-height: 26px;
+	font-family: "PT Sans";
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #ffffff;
+	background-color: #81b3d2;
+	border-style: none;
+}
+
 .main-footer {
   width: 1200px;
 	color: #000000;
