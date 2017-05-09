@@ -72,12 +72,21 @@
 						<div class="hotel-price-slider">
 							<p class="hotel-price-slider-headline">Стоимость в сутки (р):</p>
 
-              <table class="hotel-price-slider-table">
-                <tr>
-                  <td>От 0</td>
-                  <td>До 3000</td>
-                </tr>
-              </table>
+              <div class="range-filter">
+                <div class="price-controls">
+                  <input class="min-price" name="min-price" type="text" value="От 0"> 
+                  <input class="max-price" name="max-price" type="text" value="До 3000">
+                </div>
+
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+      
+                  <div class="toggle min-toggle"></div>
+                  <div class="toggle max-toggle"></div>
+                </div>    
+              </div>
 
 							<button class="hotel-price-slider-button" type="submit">Показать</button>
 						</div>

@@ -21,7 +21,10 @@ body {
 	position: relative;
 	width: 1200px;
 	margin: 0 auto;
-	padding: 0 40px;
+	/*padding: 0 40px;*/
+	box-shadow: 10px 0 10px -10px,
+	-10px 0 10px -10px,
+	0 10px 10px -10px;
 } /*контейнер центровщик*/
 
 .main-navigation {
@@ -227,7 +230,6 @@ body {
 	line-height: 26px;
 	font-family: "PT Sans";
 	font-weight: 700;
-	text-align: center;
 	color: #000000;
 	background-color: #ffffff;
 }
@@ -242,6 +244,7 @@ body {
 	font-weight: 700;
 	color: #000000;
 	background-color: #f2f2f2;
+  border: none;
 }
 
 .find-hotel-guest-parameter input {
@@ -253,6 +256,11 @@ body {
 	font-weight: 700;
 	color: #000000;
 	background-color: #f2f2f2;
+	border: none;
+}
+
+.find-hotel-guest-parameter-left {
+	margin-right: 95px;
 }
 
 .find-hotel-button {
@@ -362,7 +370,7 @@ body {
 } /*Выбор типа жилья*/
 
 .hotel-choose-headline {
-  padding: 0 0 15px;
+  padding: 25px 0 10px 210px;
   margin: 0;
   font-size: 16px;
   line-height: 21px;
@@ -393,12 +401,69 @@ body {
   color: #ffffff;
 } /*Загоовок слайдера*/
 
-.hotel-price-slider-table {
-	margin: 0 210px 32px 73px;
-	padding: 10px 50px;
-	color: #ffffff;
-	border: 2px #ffffff;
-} /*Показатели цены слайдера*/
+/*ПОЛЗУНОК*/
+
+.range-filter {
+  width: 318px;
+  margin: 15px 73px 0 210px;
+}
+
+.range-controls {
+  position: relative;
+  height: 55px;
+  padding: 0 30px;
+  overflow: hidden;
+}
+
+.range-controls .scale {
+  margin-top: 39px;
+  height: 2px;
+  background-color: #948482;
+}
+
+.range-controls .bar {
+  height: 2px;
+  width: 70%;
+  background-color: #ffffff;
+}
+
+.range-controls .toggle {
+	position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 5px;
+  height: 5px;
+  border: 8px solid #ffffff;
+  background-color: #1c4f80;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.range-controls .max-toggle {
+  left: 210px;
+}
+
+.price-controls {
+  display: flex;
+  justify-content: space-between
+}
+
+.price-controls input {
+  width: 159px;
+  padding: 10px;
+  font-size: 14px;
+	font-family: "PT Sans";
+	text-transform: uppercase;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  background-color: rgba(255,255,255,0);
+  text-align: center;
+}
+
+.price-controls  {
+  position: relative;
+  margin-bottom: 10px;
+}
 
 .hotel-price-slider-button {
   width: 133px;
