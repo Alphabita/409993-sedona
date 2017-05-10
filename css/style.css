@@ -8,7 +8,7 @@ body {
 	font-family: "PT Sans", "Arial", sans-serif;
 	text-transform: uppercase;
 	color: #000000;
-	background-color: #f2f2f2;
+	background-color: #e5e5e5;
 }
 
 .clearfix::after {
@@ -54,6 +54,10 @@ body {
 .main-navigation li {
 	padding: 15px 73px;
 } /*пункты основной навигации*/
+
+.main-navigation li:nth-child(3n){
+	padding: 15px 89px 15px 57px;
+}
 
 .main-navigation a {
 	font-size: 14px;
@@ -222,7 +226,7 @@ body {
 	width: 568px;
 	font-size: 21px;
 	line-height: 26px;
-	font-family: "PT Sans";
+	font-family: "PT Sans", "Arial", sans-serif;
 	text-transform: uppercase;
 	font-weight: 700;
 	color: #ffffff;
@@ -236,23 +240,23 @@ body {
 	left: 50%;
 	margin-left: -284px;
 	width: 454px;
-	padding: 57px;
+	padding: 57px 57px 54px;
 	z-index: 4;
 	font-size: 14px;
 	line-height: 26px;
-	font-family: "PT Sans";
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-weight: 700;
 	color: #000000;
 	background-color: #ffffff;
 }
 
 .find-hotel-date-parameter input {
-	width: 345px;
-	padding: 5px 0;
+	width: 325px;
+	padding: 5px 10px;
 	margin: 0 0 30px;
 	font-size: 14px;
 	line-height: 26px;
-	font-family: "PT Sans";
+	font-family: "PT Sans", "Arial", sans-serif;
 	text-transform: uppercase;
 	font-weight: 700;
 	color: #000000;
@@ -262,27 +266,28 @@ body {
 
 .find-hotel-date-parameter label {
 	position: relative;
-	display: inline-block;
-	width: 100%;
-	text-align: left;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    text-align: left;
+    align-items: baseline;
 }
 
 .icon-calendar {
-	position: absolute;
+  position: absolute;
   background-image: url(../img/calendar-icon.png);
   width: 21px;
   height: 21px;
   top: 6px;
-  left: 410px;
+  right: 9px;
 }
 
 .find-hotel-guest-parameter input {
 	width: 114px;
-	padding: 5px 0;
-	margin: 5px 0 0 10px;
+	padding: 6px 0;
 	font-size: 14px;
 	line-height: 26px;
-	font-family: "PT Sans";
+	font-family: "PT Sans", "Arial", sans-serif;
 	text-transform: uppercase;
 	font-weight: 700;
 	text-align: center;
@@ -291,18 +296,36 @@ body {
 	border: none;
 }
 
+.find-hotel-guest-parameter {
+	display: flex;
+  justify-content: space-between;
+}
+
+.find-hotel-guest-parameter label {
+	position: relative;
+	display: flex;
+  width: 50%;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.find-hotel-guest-parameter label:first-child {
+	width: 223px;
+}
+
+.find-hotel-guest-parameter label:last-child {
+	width: 178px;
+}
+
 .icon-plus-adults,
 .icon-plus-children {
 	position: absolute;
 	background-image: url(../img/plus-icon.png);
 	width: 11px;
   height: 11px;
-  top: 205px;
-  left: 245px;
-}
-
-.icon-plus-children {
-  left: 485px;
+  top: 50%;
+  margin-top: -5px;
+  right: 14px;
 }
 
 .icon-minus-adults,
@@ -311,12 +334,9 @@ body {
 	background-image: url(../img/minus-icon.png);
 	width: 12px;
   height: 3px;
-  top: 210px;
-  left: 155px;
-}
-
-.icon-minus-children {	
-  left: 400px;
+  top: 50%;
+  margin-top: -1.5px;
+  right: 90px;
 }
 
 .find-hotel-guest-parameter-left {
@@ -324,12 +344,12 @@ body {
 }
 
 .find-hotel-button {
-  padding: 20px 197px;
+  padding: 17px 197px;
 	margin: 55px 0 0;
   width: 100%;
 	font-size: 21px;
 	line-height: 26px;
-	font-family: "PT Sans";
+	font-family: "PT Sans", "Arial", sans-serif;
 	text-transform: uppercase;
 	font-weight: 700;
 	color: #ffffff;
@@ -347,12 +367,18 @@ body {
 	background-image: url(../img/map.png);
 } /*Карта в футере*/
 
+.map .footer-tag,
+.map .footer-social,
+.map .footer-copyright {
+	background-color: rgba(255,255,255,0.9)
+}
+
 .footer-tag {
 	float: left;
 	width: 400px;
 	padding: 47px 0;
 	text-align: center;
-  background-color: rgba(255,255,255,0.9);
+  background-color: #ffffff;
 } /*Блок футера, содержащий тег*/
 
 .footer-tag-text {
@@ -367,15 +393,17 @@ body {
 	float: left;
 	width: 400px;
 	padding: 36px 0;
+	font-size: 0px;
 	text-align: center;
-  background-color: rgba(255,255,255,0.9);
+  background-color: #ffffff;
 } /*Блок футера, содержащий кнопки соц.сетей*/
 
 .social-btn {
 	display: inline-block;
 	vertical-align: middle;
 	width: 46px;
-	min-height: 48px;
+	min-height: 46px;
+	margin-right: 5px;
 	color: #ffffff;
 	background-color: #81b3d2;
 	background-repeat: no-repeat;
@@ -398,7 +426,7 @@ body {
 	float: right;
 	width: 400px;
 	text-align: center;
-  background-color: rgba(255,255,255,0.9);
+  background-color: #ffffff;
 } /*Блок футера, содержащий лого разработчика*/
 
 .copyright {
@@ -456,10 +484,14 @@ body {
   display: block;
   margin: 11px 0 0;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 20px;
   font-weight: 400;
   color: #ffffff;
 } /*Пункты списков: Инфраструктура + Тип жилья*/
+
+.hotel-choose-text input {
+	margin-right: 28px;
+}
 
 .hotel-price-slider {
   float: right;
@@ -483,13 +515,13 @@ body {
 
 .range-controls {
   position: relative;
-  height: 50px;
+  height: 53px;
   width: 100%;
   overflow: hidden;
 }
 
 .range-controls .scale {
-  margin-top: 16px;
+  margin-top: 20px;
   height: 2px;
   background-color: #948482;
 }
@@ -502,7 +534,7 @@ body {
 
 .range-controls .toggle {
 	position: absolute;
-  top: 6px;
+  top: 10px;
   left: 0;
   width: 5px;
   height: 5px;
@@ -518,9 +550,9 @@ body {
 
 .price-controls input {
   width: 157px;
-  padding: 10px 0;
+  padding: 8px 0;
   font-size: 14px;
-	font-family: "PT Sans";
+	font-family: "PT Sans", "Arial", sans-serif;
 	text-transform: uppercase;
   color: #ffffff;
   border: 2px solid #ffffff;
@@ -555,10 +587,10 @@ input.min-price {
 
 .hotel-price-slider-button {
   width: 137px;
-  padding: 7px 15px;
+  padding: 8px 15px;
   margin: 0 0 0 85px;
   font-size: 14px;
-	font-family: "PT Sans";
+	font-family: "PT Sans", "Arial", sans-serif;
 	text-transform: uppercase;
   color: #ffffff;
   background-color: rgba(255,255,255,0);
@@ -577,6 +609,7 @@ input.min-price {
 .hotel-item {
 	width: 1200px;
 	background-color: #ffffff;
+	border-bottom: 1px solid #e5e5e5; 
 } /*Плашки для блоков сортировки и информации об отелях*/
 
 .sort-results {
@@ -596,7 +629,36 @@ input.min-price {
 
 .sort-filter {
 	float: left;
+	font-size: 0px;
 } /*Кнопки: по цене-по типу-по рейтингу */
+
+.sort-options,
+.sort-price,
+.sort-type,
+.sort-rating {
+	display: inline-block;
+	font-size: 12px;
+	line-height: 15px;
+	text-decoration: none;
+	color: #b7b7b7;
+	border-bottom: 1px dotted #81b3d2;
+}
+
+.sort-options {
+	margin: 0 38px 0 0;
+	color: #000000;
+	border-bottom: none;
+}
+
+.sort-price,
+.sort-type {
+	margin: 0 30px 0 0;
+}
+
+.sort-price.active {
+	border-bottom: none;
+	color: #81b3d2;
+}
 
 .sort-buttons {
 	float: right;
@@ -604,13 +666,14 @@ input.min-price {
 
 .hotel-item-photo {
 	float: left;
-	width: 166px;
-	margin: 29px 0 29px 73px;
+	width: 135px;
+	margin: 28px 30px 28px 73px;
 } /*Изображение отеля*/
 
 .hotel-item-description {
 	float: left;
 	margin: 24px 0;
+	width: 565px;
 } /*Полное описание отеля*/
 
 .hotel-item-name {
@@ -628,14 +691,18 @@ input.min-price {
 	color: #333333;
 } /*Цена и тип отеля*/
 
-.hotel-item-type,
+.hotel-item-type {
+	float: left;
+	width: 115px;
+}
+
 .more-button {
 	float: left;
 }
 
 .hotel-item-price,
 .book-button {
-	float: right;
+	float: left;
 }
 
 .hotel-item-price {
@@ -643,8 +710,8 @@ input.min-price {
 }
 
 .hotel-item-button {
-	padding: 5px 15px;
-	margin: 0 10px 0 0;
+	padding: 5px 16px;
+	margin: 0 7px 0 0;
 	color: #ffffff;
 	text-decoration: none;
 } /*Кнопки Подробнее-Забронировать*/
@@ -659,21 +726,44 @@ input.min-price {
 
 .hotel-item-rating {
   position: relative;
+  float: right;
+  width: 240px;
+    margin-right: 72px;
+    padding: 28px 0;
 }
 
 .hotel-item-rating-total {
-	position: absolute;
-	top: 90px;
-	right: 70px;
-	float: right;
-	width: 110px;
-	margin: 0;
-	padding: 5px;
-	font-size: 14px;
-	font-family: "PT Sans";
-	text-transform: uppercase;
-	color: #666666;
-	background-color: #f2f2f2;
+	margin: 45px 0 0 auto;
+  padding: 7px 0;
+  width: 110px;
+  font-size: 14px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: #666666;
+  background-color: #f2f2f2;
 } /*Рейтинг отеля*/
 
+.hotel-item-rating-4stars,
+.hotel-item-rating-3stars,
+.hotel-item-rating-2stars {
+  width: 110px;
+  height: 17px;
+  margin: 0 0 0 auto;
+  font-size: 0;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center right;
+}
 
+.hotel-item-rating-4stars {
+  background-image: url(../img/four-stars.png);
+}
+
+.hotel-item-rating-3stars {
+  background-image: url(../img/three-stars.png);
+}
+
+.hotel-item-rating-2stars {
+  background-image: url(../img/two-stars.png);
+}
