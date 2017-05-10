@@ -235,8 +235,8 @@ body {
 	top: 100%;
 	left: 50%;
 	margin-left: -284px;
-	width: 460px;
-	padding: 54px 54px;
+	width: 454px;
+	padding: 57px;
 	z-index: 4;
 	font-size: 14px;
 	line-height: 26px;
@@ -247,7 +247,8 @@ body {
 }
 
 .find-hotel-date-parameter input {
-	width: 347px;
+	width: 345px;
+	padding: 5px 0;
 	margin: 0 0 30px;
 	font-size: 14px;
 	line-height: 26px;
@@ -259,38 +260,73 @@ body {
   border: none;
 }
 
+.find-hotel-date-parameter label {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	text-align: left;
+}
+
 .icon-calendar {
-	background-image: url(../img/calendar-icon.png);
+	position: absolute;
+  background-image: url(../img/calendar-icon.png);
+  width: 21px;
+  height: 21px;
+  top: 6px;
+  left: 410px;
 }
 
 .find-hotel-guest-parameter input {
 	width: 114px;
+	padding: 5px 0;
+	margin: 5px 0 0 10px;
 	font-size: 14px;
 	line-height: 26px;
 	font-family: "PT Sans";
 	text-transform: uppercase;
 	font-weight: 700;
+	text-align: center;
 	color: #000000;
 	background-color: #f2f2f2;
 	border: none;
 }
 
-.icon-plus {
-	background-image: url(../img/plus-icon.png);f
+.icon-plus-adults,
+.icon-plus-children {
+	position: absolute;
+	background-image: url(../img/plus-icon.png);
+	width: 11px;
+  height: 11px;
+  top: 205px;
+  left: 245px;
 }
 
-.icon-minus {
-	background-image: url(../img/minus-icon.png);f
+.icon-plus-children {
+  left: 485px;
+}
+
+.icon-minus-adults,
+.icon-minus-children {
+	position: absolute;
+	background-image: url(../img/minus-icon.png);
+	width: 12px;
+  height: 3px;
+  top: 210px;
+  left: 155px;
+}
+
+.icon-minus-children {	
+  left: 400px;
 }
 
 .find-hotel-guest-parameter-left {
-	margin-right: 95px;
+	margin-right: 75px;
 }
 
 .find-hotel-button {
   padding: 20px 197px;
-	margin: 54px 0 0;
-  width: 460px;
+	margin: 55px 0 0;
+  width: 100%;
 	font-size: 21px;
 	line-height: 26px;
 	font-family: "PT Sans";
@@ -408,7 +444,7 @@ body {
 } /*Выбор типа жилья*/
 
 .hotel-choose-headline {
-  padding: 0 0 10px;
+  padding: 0 0 15px;
   margin: 0;
   font-size: 16px;
   line-height: 21px;
@@ -418,7 +454,7 @@ body {
 
 .hotel-choose-text {
   display: block;
-  margin: 5px 0;
+  margin: 11px 0 0;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -427,12 +463,11 @@ body {
 
 .hotel-price-slider {
   float: right;
-  width: 355px;
-  margin-right: 72px;
+  width: 390px;
+  margin: 0 0 0 210px;
 } /*Обертка для слайдера с заголовком и кнопкой*/
 
 .hotel-price-slider-headline {
-  /*padding: 25px 205px 10px;*/
   margin: 25px 0 10px;
   font-size: 16px;
   line-height: 21px;
@@ -444,33 +479,31 @@ body {
 
 .range-filter {
   width: 318px;
-  /*margin: 15px 73px 0 210px;*/
 }
 
 .range-controls {
   position: relative;
-  height: 55px;
+  height: 50px;
   width: 100%;
-  /*padding: 0 30px;*/
   overflow: hidden;
 }
 
 .range-controls .scale {
-  margin-top: 39px;
+  margin-top: 16px;
   height: 2px;
   background-color: #948482;
 }
 
 .range-controls .bar {
   height: 2px;
-  width: 70%;
+  width: 80%;
   background-color: #ffffff;
 }
 
 .range-controls .toggle {
 	position: absolute;
-  top: 30px;
-  left: 30px;
+  top: 6px;
+  left: 0;
   width: 5px;
   height: 5px;
   border: 8px solid #ffffff;
@@ -480,25 +513,8 @@ body {
 }
 
 .range-controls .max-toggle {
-  left: 210px;
+  left: 252px;
 }
-
-/*.price-controls {
-  display: flex;
-  justify-content: space-between
-}*/
-
-/*.price-controls input {
-  width: 155px;
-  padding: 10px;
-  font-size: 14px;
-	font-family: "PT Sans";
-	text-transform: uppercase;
-  color: #ffffff;
-  border: 2px solid #ffffff;
-  background-color: transparent;
-  text-align: center;
-}*/
 
 .price-controls input {
   width: 157px;
@@ -538,9 +554,9 @@ input.min-price {
 }
 
 .hotel-price-slider-button {
-  width: 133px;
+  width: 137px;
   padding: 7px 15px;
-  /*margin: 18px 168px 33px 297px;*/
+  margin: 0 0 0 85px;
   font-size: 14px;
 	font-family: "PT Sans";
 	text-transform: uppercase;
@@ -566,7 +582,7 @@ input.min-price {
 .sort-results {
 	float: left;
 	width: 162px;
-	/*padding: 30px 45px 30px 73px;*/
+	margin: 30px 0 30px 73px;
 	font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -575,7 +591,7 @@ input.min-price {
 .sort-ation {
 	float: left;
 	width: 963px;
-	/*padding: 35px 665px 35px 5px;*/
+	margin: 35px 0;
 } /*Блок с текстом "Сортировка" и кнопками-стрелками*/
 
 .sort-filter {
@@ -589,13 +605,12 @@ input.min-price {
 .hotel-item-photo {
 	float: left;
 	width: 166px;
-	padding: 30px 0 30px 55px;
+	margin: 29px 0 29px 73px;
 } /*Изображение отеля*/
 
 .hotel-item-description {
 	float: left;
-	width: 780px;
-	padding: 25px 0;
+	margin: 24px 0;
 } /*Полное описание отеля*/
 
 .hotel-item-name {
@@ -607,14 +622,29 @@ input.min-price {
 } /*Название отеля*/
 
 .hotel-item-info {
-	padding: 5px 24px 18px 0;
+	padding: 5px 24px 19px 0;
 	margin: 0;
 	font-size: 14px;
 	color: #333333;
 } /*Цена и тип отеля*/
 
+.hotel-item-type,
+.more-button {
+	float: left;
+}
+
+.hotel-item-price,
+.book-button {
+	float: right;
+}
+
+.hotel-item-price {
+	margin: 0 60px 0 0;
+}
+
 .hotel-item-button {
-	padding: 8px 15px;
+	padding: 5px 15px;
+	margin: 0 10px 0 0;
 	color: #ffffff;
 	text-decoration: none;
 } /*Кнопки Подробнее-Забронировать*/
@@ -628,9 +658,22 @@ input.min-price {
 } /*Кнопка Забронировать*/
 
 .hotel-item-rating {
+  position: relative;
+}
+
+.hotel-item-rating-total {
+	position: absolute;
+	top: 90px;
+	right: 70px;
 	float: right;
-	width: 184px;
-	padding: 30px 0;
+	width: 110px;
+	margin: 0;
+	padding: 5px;
+	font-size: 14px;
+	font-family: "PT Sans";
+	text-transform: uppercase;
+	color: #666666;
+	background-color: #f2f2f2;
 } /*Рейтинг отеля*/
 
 
