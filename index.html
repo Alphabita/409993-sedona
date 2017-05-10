@@ -12,10 +12,12 @@
 	</head>
 
 	<body>
-    
-		<header class="main-header">
-			<div class="container">
-				<div class="header-logo">
+
+    <div class="container">
+
+		  <header class="main-header">
+			  
+			  <div class="header-logo">
 					<img src="img/logo.png" width="138" height="70" alt="Седона &ndash; туристический рай Аризоны">
 				</div><!--logo-->
 
@@ -36,18 +38,18 @@
 						</li>
 					</ul>
 				</nav>
-			</div><!--end container-->
-		</header>
+			
+		  </header>
 
-		<main>
-			<div class="container">
+		  <main>
+			
 				<div class="promo">
 					<div class="promo-image">
 						<img src="img/background-image.jpg" width="1200" height="509" alt="Прекрасный вид Седоны"> 
 					</div>
 
 					<div class="promo-text">
-						<b class="promo-text-slogan">Седона &ndash; небольшой городок в Аризоне,<br> заслуживающий большего!</b>
+						<b class="promo-text-slogan">Седона &ndash; небольшой городок в Аризоне, заслуживающий большего!</b>
 						<p class="promo-text-reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд&ndash;Каньон.</p>
 					</div>
 				</div>
@@ -67,20 +69,17 @@
 				<section class="reason-features clearfix">
 					<div class="reason-feature white image home-image">
 						<b class="reason-feature-name">Жилье</b>
-						<p class="reason-feature-text">Рекомендуем пожить в настоящем<br>
-						мотеле, все как в кино!</p>
+						<p class="reason-feature-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
 					</div>
 
 					<div class="reason-feature white image food-image">
 						<b class="reason-feature-name">Еда</b>
-						<p class="reason-feature-text">Всегда заказывайте фирменный бургер,<br>
-						вы не разочаруетесь!</p>
+						<p class="reason-feature-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 					</div>
 
 					<div class="reason-feature white image souvenirs-image">
 						<b class="reason-feature-name">Сувениры</b>
-						<p class="reason-feature-text">Не только китайского, но и местного<br>
-						производства!</p>
+						<p class="reason-feature-text">Не только китайского, но и местного производства!</p>
 					</div>
 				</section>
 
@@ -99,26 +98,22 @@
 
 				<section class="reason-features clearfix">
 					<div class="reason-feature gray">
-						<b class="reason-feature-name">Небольшая<br>
-						площадь</b>
+						<b class="reason-feature-name">Небольшая площадь</b>
 						<p class="reason-feature-text">-№3-</p>
-						<p class="reason-feature-text">Все достопримечательности<br>
+						<p class="reason-feature-text">Все достопримечательности
 						находятся очень близко</p>
 					</div>
 
 					<div class="reason-feature gray">
-						<b class="reason-feature-name">Красивая<br>
-						дорога</b>
+						<b class="reason-feature-name">Красивая дорога</b>
 						<p class="reason-feature-text">-№4-</p>
-						<p class="reason-feature-text">Ехать в Седону из Лас&ndash;Вегаса совсем<br>
-						не скучно!</p>
+						<p class="reason-feature-text">Ехать в Седону из Лас&ndash;Вегаса совсем не скучно!</p>
 					</div>
 
 					<div class="reason-feature gray">
-						<b class="reason-feature-name">Мало<br>туристов</b>
+						<b class="reason-feature-name">Мало туристов</b>
 						<p class="reason-feature-text">-№5-</p>
-						<p class="reason-feature-text">Большинство едет в Гранд&ndash;Каньон, и<br>
-						толпится там</p>
+						<p class="reason-feature-text">Большинство едет в Гранд&ndash;Каньон, и толпится там</p>
 					</div>
 				</section>
 
@@ -128,22 +123,58 @@
 						<p class="hotel-booking-info">Укажите предполагаемые даты поездки,<br>
 						а мы покажем вам лучшие предложения гостиниц в Седоне</p>
 					</div>
-					<button class="hotel-booking-button" type="submit">Поиск гостиницы в Седоне</button>
-				</div>
-			</div><!--end container-->
-		</main>
 
-		<footer>
-			<div class="container">
-        		<div class="main-footer map clearfix">
-          			<section class="footer-tag">
+					<button class="hotel-booking-button" type="submit">Поиск гостиницы в Седоне</button>
+
+          <form class="find-hotel-form">
+            <div class="find-hotel-date-parameter">
+              <label>
+              Дата заезда:
+              <input type="text" name="check-in-date" value="24 апреля 2017">
+              <span class="icon-calendar"></span>
+              </label>
+        
+              <label>
+              Дата выезда:
+              <input type="text" name="check-out-date" value="4 июля 2017">
+              <span class="icon-calendar"></span>
+              </label>
+            </div>
+
+            <div class="find-hotel-guest-parameter">
+              <label class="find-hotel-guest-parameter-left">
+              Взрослые:
+              <input type="text" name="adults" value="1">
+              <span class="icon-plus"></span>
+              <span class="icon-minus"></span>
+              </label>
+
+          
+              <label class="find-hotel-guest-parameter-right">
+              Дети:
+              <input type="text" name="children" value="1">
+              <span class="icon-plus"></span>
+              <span class="icon-minus"></span>
+              </label>
+            </div>
+
+            <button class="find-hotel-button" type="submit">Найти</button>
+          </form>
+				</div>
+			
+		  </main>
+
+		  <footer>
+			
+        <div class="main-footer map clearfix">
+          <section class="footer-tag">
 						<p class="footer-tag-text">#visitsedona</p>
 					</section>
 
 					<section class="footer-social">
-						<a class="social-btn social-btn-vk" href="#">vk</a>
-						<a class="social-btn social-btn-fb" href="#">fb</a>
-						<a class="social-btn social-btn-youtube" href="#">tube</a>
+						<a class="social-btn social-btn-twitter" href="#"></a>
+						<a class="social-btn social-btn-fb" href="#"></a>
+						<a class="social-btn social-btn-youtube" href="#"></a>
 					</section>
 
 					<section class="footer-copyright">
@@ -153,33 +184,11 @@
 						</a>
 					</section>
 				</div>
-			</div><!--end container-->				
-		</footer>
+							
+		  </footer>
+		  
 		</div>
-
-			<form class="find-hotel-form">
-				<div class="find-hotel-date-parameter">
-				  <label>
-						Дата заезда: <input type="text" name="check-in-date" value="24 апреля 2017">
-					</label>
-				
-				  <label>
-						Дата выезда: <input type="text" name="check-out-date" value="4 июля 2017">
-					</label>
-				</div>
-
-				<div class="find-hotel-guest-parameter">
-				  <label class="find-hotel-guest-parameter-left">
-						Взрослые: <input type="text" name="adults" value="1">
-					</label>
-					
-				  <label class="find-hotel-guest-parameter-right">
-						Дети: <input type="text" name="children" value="1">
-					</label>
-				</div>
-				<button class="find-hotel-button" type="submit">Найти</button>
-			</form>
-
+    
 	</body>
 
 </html>

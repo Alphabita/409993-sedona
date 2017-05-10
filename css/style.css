@@ -1,5 +1,5 @@
 body {
-	min-width: 1280px;
+	min-width: 1200px;
 	margin: 0;
 	padding: 0;
 	font-size: 14px;
@@ -18,17 +18,18 @@ body {
 } /*распорка*/
 
 .container {
-	position: relative;
 	width: 1200px;
 	margin: 0 auto;
 	/*padding: 0 40px;*/
-	box-shadow: 10px 0 10px -10px,
-	-10px 0 10px -10px,
-	0 10px 10px -10px;
+	box-shadow: 0 10px 20px 2px rgba(0,1,1,0.2);
 } /*контейнер центровщик*/
 
+.main-header {
+  position: relative;
+}
+
 .main-navigation {
-	z-index:2;
+	z-index:1;
 	width: 1200px;
 	color: #000000;
 	background-color: #ffffff;
@@ -36,9 +37,10 @@ body {
 
 .header-logo {
 	position: absolute;
-	z-index:4;
-	right: 584px;
-	left: 571px;
+	z-index:3;
+	top: 0;
+	left: 50%;
+	margin: 0 0 0 -70px;
 	width: 138px;
 	height: 70px;
 } /*логотип в хедере*/
@@ -76,7 +78,7 @@ body {
 } /*изображение с надписью Welcome to Sedona*/
 
 .promo-text {
-	padding: 60px 0 37px;
+	padding: 60px 290px 37px;
 	text-align: center;
 	background-color: #ffffff;
 } /*Блок текста под изображением (см. правило выше)*/
@@ -99,8 +101,8 @@ body {
 
 .reason-photo-text-left {
 	float: left;
-	width: 308px;
-	padding: 50px 46px 43px;
+	width: 300px;
+	padding: 50px 50px 43px;
 	text-align: center;
 	color: #ffffff;
 	background-color: #81b3d2;
@@ -114,8 +116,8 @@ body {
 
 .reason-photo-text-right {
 	float: right;
-	padding: 50px 46px 43px;
-	width: 308px;  
+	padding: 50px 40px 43px;
+	width: 320px;  
 	text-align: center;
 	color: #ffffff;
 	background-color: #81b3d2;	
@@ -147,17 +149,18 @@ body {
 
 .reason-feature {
 	float: left;
-	width: 400px;
 	text-align: center;
 } /*Правила для блоков: Жилье-Еда-Сувениры + Небольшая площадь-Красивая дорога-Мало туристов*/
 
 .gray {
-  padding: 49px 0 58px;
+  width: 280px;
+  padding: 49px 60px 58px;
 	background-color: #eeeeee;
 } /* Доп. правила для блоков: Небольшая площадь-Красивая дорога-Мало туристов*/
 
 .white {
-  padding: 160px 0 85px;
+  width: 300px;
+  padding: 160px 50px 85px;
 	background-color: #ffffff;
 } /*Доп. правила для блоков: Жилье-Еда-Сувениры*/
 
@@ -179,6 +182,9 @@ body {
 } /*Изображение блока Сувениры*/
 
 .reason-feature-name {
+	display: block;
+  max-width: 150px;
+  margin: 0 auto;
 	font-size: 21px;
 	line-height: 21px;
 	font-weight: 700;
@@ -196,6 +202,7 @@ body {
 } /*Текст блоков: Жилье-Еда-Сувениры + Небольшая площадь-Красивая дорога-Мало туристов ++ текст: Укажите предполагаемые даты*/
 
 .hotel-booking {
+	position: relative;
 	text-align: center;
 	background-color: #ffffff;
 } /*Блок поиска гостиницы: текст + кнопка*/
@@ -224,8 +231,13 @@ body {
 } /*Кнопка блока поиска гостиницы*/
 
 .find-hotel-form {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -284px;
 	width: 460px;
 	padding: 54px 54px;
+	z-index: 4;
 	font-size: 14px;
 	line-height: 26px;
 	font-family: "PT Sans";
@@ -247,6 +259,10 @@ body {
   border: none;
 }
 
+.icon-calendar {
+	background-image: url(../img/calendar-icon.png);
+}
+
 .find-hotel-guest-parameter input {
 	width: 114px;
 	font-size: 14px;
@@ -257,6 +273,14 @@ body {
 	color: #000000;
 	background-color: #f2f2f2;
 	border: none;
+}
+
+.icon-plus {
+	background-image: url(../img/plus-icon.png);f
+}
+
+.icon-minus {
+	background-image: url(../img/minus-icon.png);f
 }
 
 .find-hotel-guest-parameter-left {
@@ -318,7 +342,21 @@ body {
 	min-height: 48px;
 	color: #ffffff;
 	background-color: #81b3d2;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
 } /*Правило для кнопок соц.сетей*/
+
+.social-btn-twitter {
+	background-image: url(../img/twitter-logo.png);
+}
+
+.social-btn-fb {
+	background-image: url(../img/facebook-logo.png);
+}
+
+.social-btn-youtube {
+	background-image: url(../img/youtube-logo.png);
+}
 
 .footer-copyright {
 	float: right;
@@ -351,7 +389,7 @@ body {
 
 .hotel-choose {
   height: 218px;
-  z-index: 3;
+  z-index: 2;
   background-image: url(../img/catalog-background-image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -370,7 +408,7 @@ body {
 } /*Выбор типа жилья*/
 
 .hotel-choose-headline {
-  padding: 25px 0 10px 210px;
+  padding: 0 0 10px;
   margin: 0;
   font-size: 16px;
   line-height: 21px;
@@ -389,12 +427,13 @@ body {
 
 .hotel-price-slider {
   float: right;
-  width: 600px;
+  width: 355px;
+  margin-right: 72px;
 } /*Обертка для слайдера с заголовком и кнопкой*/
 
 .hotel-price-slider-headline {
-  padding: 25px 205px 10px;
-  margin: 0;
+  /*padding: 25px 205px 10px;*/
+  margin: 25px 0 10px;
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
@@ -405,13 +444,14 @@ body {
 
 .range-filter {
   width: 318px;
-  margin: 15px 73px 0 210px;
+  /*margin: 15px 73px 0 210px;*/
 }
 
 .range-controls {
   position: relative;
   height: 55px;
-  padding: 0 30px;
+  width: 100%;
+  /*padding: 0 30px;*/
   overflow: hidden;
 }
 
@@ -443,32 +483,64 @@ body {
   left: 210px;
 }
 
-.price-controls {
+/*.price-controls {
   display: flex;
   justify-content: space-between
-}
+}*/
 
-.price-controls input {
-  width: 159px;
+/*.price-controls input {
+  width: 155px;
   padding: 10px;
   font-size: 14px;
 	font-family: "PT Sans";
 	text-transform: uppercase;
   color: #ffffff;
   border: 2px solid #ffffff;
-  background-color: rgba(255,255,255,0);
+  background-color: transparent;
   text-align: center;
+}*/
+
+.price-controls input {
+  width: 157px;
+  padding: 10px 0;
+  font-size: 14px;
+	font-family: "PT Sans";
+	text-transform: uppercase;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  text-align: center;
+}
+
+input.max-price {
+	margin: 0 0 0 -5px;
+	border-left: none;
+}
+
+input.min-price {
+	border-right: none;
+}
+
+.price-controls:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -11px 0 0 -1px;
+	width: 2px;
+	height: 22px;
+	background-color: #ffffff;
 }
 
 .price-controls  {
   position: relative;
-  margin-bottom: 10px;
+  /*margin-bottom: 10px;*/
 }
 
 .hotel-price-slider-button {
   width: 133px;
   padding: 7px 15px;
-  margin: 18px 168px 33px 297px;
+  /*margin: 18px 168px 33px 297px;*/
   font-size: 14px;
 	font-family: "PT Sans";
 	text-transform: uppercase;
@@ -493,7 +565,8 @@ body {
 
 .sort-results {
 	float: left;
-	padding: 30px 45px 30px 73px;
+	width: 162px;
+	/*padding: 30px 45px 30px 73px;*/
 	font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -501,7 +574,8 @@ body {
 
 .sort-ation {
 	float: left;
-	padding: 35px 665px 35px 5px;
+	width: 963px;
+	/*padding: 35px 665px 35px 5px;*/
 } /*Блок с текстом "Сортировка" и кнопками-стрелками*/
 
 .sort-filter {
