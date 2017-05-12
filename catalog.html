@@ -5,40 +5,41 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">    
-    <title>Седона. Выбор гостиницы</title>
+    <link href="css/style.css" rel="stylesheet">
+    <title>Выбор гостиницы &ndash; Седона</title>
   </head>
 
   <body>
     <div class="container">
 
-      <header class="main-header">      
+      <header class="main-header">
         <div class="header-logo">
-          <a href="index.html"><img src="img/logo.png" width="138" height="70" alt="Седона &ndash; туристический рай Аризоны"></a>
+          <a href="index.html">
+            <img src="img/logo.png" width="138" height="70" alt="Седона &ndash; туристический рай Аризоны">
+          </a>
         </div><!--logo-->
 
         <nav class="main-navigation"><!--main navigation-->
-          <ul class="main-navigation-list clearfix">
-            <li class="main-navigation-item-info">
-              <a class="main-navigation-link-info" href="#">Информация</a>
+          <ul class="main-navigation-list">
+            <li>
+              <a href="#">Информация</a>
             </li>
-            <li class="main-navigation-item-photovideo">
-              <a class="main-navigation-link-photovideo" href="#">Фото и видео</a>
+            <li>
+              <a href="#">Фото и видео</a>
             </li>
-            
-            <li class="main-navigation-item-map">
-              <a class="main-navigation-link-map" href="#">Карта штата</a>
+            <li>
+              <a href="#">Карта штата</a>
             </li>
-            <li class="main-navigation-item-hotels">
-              <a class="main-navigation-link-hotels" href="catalog.html">Гостиницы</a>
+            <li>
+              <a href="catalog.html">Гостиницы</a>
             </li>
           </ul>
-        </nav><!--end main navigation-->      
+        </nav><!--end main navigation-->
       </header>
 
-      <main>      
+      <main>
         <div class="catalog-hotel-choose"><!--infrastructure and hotel type block-->
-          <form class="hotel-choose clearfix" action="" method="get"><!--hotel-choose form-->
+          <form class="hotel-choose clearfix" action="https://echo.htmlacademy.ru" method="get"><!--hotel-choose form-->
             <div class="hotel-choose-infrastructure">
               <p class="hotel-choose-headline">Инфраструктура:</p>
               <label class="hotel-choose-text">
@@ -48,7 +49,7 @@
                 <input type="checkbox" name="parking" value="1">Парковка
               </label><br>
               <label class="hotel-choose-text">
-                <input type="checkbox" name="wifi" value="1">Wi&ndash;Fi
+                <input type="checkbox" name="wifi" value="1">Wi-Fi
               </label>
             </div>
 
@@ -64,24 +65,24 @@
                 <input type="checkbox" name="apartment" value="1">Апартаменты
               </label>
             </div>
-            
+
             <div class="hotel-price-slider">
               <p class="hotel-price-slider-headline">Стоимость в сутки (р):</p>
 
               <div class="range-filter">
                 <div class="price-controls">
-                  <input class="min-price" name="min-price" type="text" value="От 0"> 
-                  <input class="max-price" name="max-price" type="text" value="До 3000">
+                  <input class="min-price" name="min-price" type="text" value="От 0" title="Минимальная цена">
+                  <input class="max-price" name="max-price" type="text" value="До 3000" title="Максимальная цена">
                 </div>
 
                 <div class="range-controls">
                   <div class="scale">
                     <div class="bar"></div>
                   </div>
-      
+
                   <div class="toggle min-toggle"></div>
                   <div class="toggle max-toggle"></div>
-                </div>    
+                </div>
               </div>
 
               <button class="hotel-price-slider-button" type="submit">Показать</button>
@@ -92,7 +93,7 @@
         <div class="sort clearfix"><!--sorting block-->
           <div class="sort-results">Найдено:<span>3</span></div>
 
-          <div class="sort-ation clearfix" action="" method="get">
+          <div class="sort-ation clearfix">
             <div class="sort-filter">
               <span class="sort-options">Сортировка:</span>
               <a class="sort-price active" href="#">По цене</a>
@@ -101,8 +102,8 @@
             </div>
 
             <div class="sort-buttons">
-              <span class="sort-up-button"></span>
-              <span class="sort-down-button"></span>
+              <a class="sort-up-button" href="#">Сортировать по возрастанию</a>
+              <a class="sort-down-button" href="#">Сортировать по убыванию</a>
             </div>
           </div>
         </div><!--end sorting block-->
@@ -122,7 +123,7 @@
               <a class="hotel-item-button more-button" href="#">Подробнее</a>
               <a class="hotel-item-button book-button" href="#">Забронировать</a>
             </div>
-              
+
             <div class="hotel-item-rating">
               <p class="hotel-item-rating-4stars">4 звезды</p>
               <p class="hotel-item-rating-total">Рейтинг: 8,5</p>
@@ -165,12 +166,12 @@
               <a class="hotel-item-button book-button" href="#">Забронировать</a>
             </div>
 
-            <div class="hotel-item-rating">               
+            <div class="hotel-item-rating">
               <p class="hotel-item-rating-2stars">2 звезды</p>
               <p class="hotel-item-rating-total">Рейтинг: 9,2</p>
             </div>
           </article><!--end third hotel block-->
-        </div><!--end hotels and apartments info block-->      
+        </div><!--end hotels and apartments info block-->
       </main>
 
       <footer>
@@ -195,4 +196,4 @@
     </div>
   </body>
 
-<html>
+</html>
