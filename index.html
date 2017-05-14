@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <title>Главная &ndash; Седона</title>
   </head>
 
@@ -60,7 +60,7 @@
           </div>
         </section>
 
-        <section class="reason-features clearfix">
+        <section class="reason-features reason-features-white clearfix">
           <div class="reason-feature white image home-image">
             <b class="reason-feature-name">Жилье</b>
             <p class="reason-feature-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -90,7 +90,7 @@
           </div>
         </section>
 
-        <section class="reason-features clearfix">
+        <section class="reason-features reason-features-gray clearfix">
           <div class="reason-feature gray">
             <b class="reason-feature-name">Небольшая площадь</b>
             <p class="reason-feature-text">&mdash; №3 &mdash;</p>
@@ -139,16 +139,16 @@
             <div class="find-hotel-guest-parameter">
               <div class="find-hotel-guest-group">
                 <label for="adults">Взрослые:</label>
-                <button class="icon-minus" type="button">-</button>
+                <button class="icon-minus" type="button">Уменьшить количество взрослых</button>
                 <input id="adults" type="text" name="adults" value="2">
-                <button class="icon-plus" type="button">+</button>
+                <button class="icon-plus" type="button">Увеличить количество взрослых</button>
               </div>
 
               <div class="find-hotel-guest-group">
                 <label for="children">Дети:</label>
-                <button class="icon-minus" type="button">-</button>
+                <button class="icon-minus" type="button">Уменьшить количество детей</button>
                 <input id="children" type="text" name="children" value="0">
-                <button class="icon-plus" type="button">+</button>
+                <button class="icon-plus" type="button">Увеличить количество детей</button>
               </div>
             </div>
 
@@ -157,23 +157,21 @@
         </div><!--end hotel booking block-->
       </main>
 
-      <footer>
-        <div class="main-footer map clearfix">
+      <footer class="map">
+        <div class="main-footer clearfix">
           <section class="footer-tag">
             <p class="footer-tag-text">#visitsedona</p>
           </section>
 
           <section class="footer-social">
-            <a class="social-btn social-btn-twitter" href="#"></a>
-            <a class="social-btn social-btn-fb" href="#"></a>
-            <a class="social-btn social-btn-youtube" href="#"></a>
+            <a class="social-btn social-btn-twitter" href="#">Twitter аккаунт</a>
+            <a class="social-btn social-btn-fb" href="#">Facebook аккаунт</a>
+            <a class="social-btn social-btn-youtube" href="#">Youtube аккаунт</a>
           </section>
 
           <section class="footer-copyright">
             <p class="copyright footer-copyright-text">Website by</p>
-            <a class="copyright footer-copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-              <img src="img/developer-logo.png" width="113" height="39" alt="Разработчик сайта HTML Academy">
-            </a>
+            <a class="copyright footer-copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">Логотип разработчика: HTML Academy</a>
           </section>
         </div>
       </footer>

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <title>Выбор гостиницы &ndash; Седона</title>
   </head>
 
@@ -30,7 +30,7 @@
             <li>
               <a href="#">Карта штата</a>
             </li>
-            <li>
+            <li class="active">
               <a href="catalog.html">Гостиницы</a>
             </li>
           </ul>
@@ -43,26 +43,32 @@
             <div class="hotel-choose-infrastructure">
               <p class="hotel-choose-headline">Инфраструктура:</p>
               <label class="hotel-choose-text">
-                <input type="checkbox" name="pool" value="1">Бассейн
-              </label><br>
+                <input type="checkbox" checked name="pool" value="1">
+                <span>Бассейн</span>
+              </label>
               <label class="hotel-choose-text">
-                <input type="checkbox" name="parking" value="1">Парковка
-              </label><br>
+                <input type="checkbox" name="parking" value="1">
+                <span>Парковка</span>
+              </label>
               <label class="hotel-choose-text">
-                <input type="checkbox" name="wifi" value="1">Wi-Fi
+                <input type="checkbox" name="wifi" value="1">
+                <span>Wi-Fi</span>
               </label>
             </div>
 
             <div class="hotel-choose-renttype">
               <p class="hotel-choose-headline">Тип жилья:</p>
               <label class="hotel-choose-text">
-                <input type="checkbox" name="hotel" value="1">Гостиница
-              </label><br>
+                <input type="checkbox" checked name="hotel" value="1">
+                <span>Гостиница</span>
+              </label>
               <label class="hotel-choose-text">
-                <input type="checkbox" name="motel" value="1">Мотель
-              </label><br>
+                <input type="checkbox" checked name="motel" value="1">
+                <span>Мотель</span>
+              </label>
               <label class="hotel-choose-text">
-                <input type="checkbox" name="apartment" value="1">Апартаменты
+                <input type="checkbox" checked name="apartment" value="1">
+                <span>Апартаменты</span>
               </label>
             </div>
 
@@ -103,7 +109,7 @@
 
             <div class="sort-buttons">
               <a class="sort-up-button" href="#">Сортировать по возрастанию</a>
-              <a class="sort-down-button" href="#">Сортировать по убыванию</a>
+              <a class="sort-down-button active" href="#">Сортировать по убыванию</a>
             </div>
           </div>
         </div><!--end sorting block-->
@@ -115,7 +121,7 @@
             </div>
 
             <div class="hotel-item-description">
-              <h2 class="hotel-item-name">Amara resort &amp; spa</h2>
+              <a class="hotel-item-name" href="#">Amara resort &amp; spa</a>
               <div class="hotel-item-info clearfix">
                 <span class="hotel-item-type">Гостиница</span>
                 <span class="hotel-item-price">от 3500 р.</span>
@@ -136,7 +142,7 @@
             </div>
 
             <div class="hotel-item-description">
-              <h2 class="hotel-item-name">Desert Quail inn</h2>
+              <a class="hotel-item-name" href="#">Desert Quail inn</a>
               <div class="hotel-item-info clearfix">
                 <span class="hotel-item-type">Мотель</span>
                 <span class="hotel-item-price">от 2000 р.</span>
@@ -157,7 +163,7 @@
             </div>
 
             <div class="hotel-item-description">
-              <h2 class="hotel-item-name">Villas at Poco Diablo</h2>
+              <a class="hotel-item-name" href="#">Villas at Poco Diablo</a>
               <div class="hotel-item-info clearfix">
                 <span class="hotel-item-type">Апартаменты</span>
                 <span class="hotel-item-price">от 4000 р.</span>
@@ -181,14 +187,14 @@
           </section>
 
           <section class="footer-social">
-            <a class="social-btn social-btn-twitter" href="#"></a>
-            <a class="social-btn social-btn-fb" href="#"></a>
-            <a class="social-btn social-btn-youtube" href="#"></a>
+            <a class="social-btn social-btn-twitter" href="#">Twitter аккаунт</a>
+            <a class="social-btn social-btn-fb" href="#">Facebook аккаунт</a>
+            <a class="social-btn social-btn-youtube" href="#">Youtube аккаунт</a>
           </section>
 
           <section class="footer-copyright">
             <p class="copyright footer-copyright-text">Website by</p>
-            <a class="copyright footer-copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/developer-logo.png" width="113" height="39" alt="Разработчик сайта HTML Academy"></a>
+            <a class="copyright footer-copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">Логотип разработчика: HTML Academy</a>
           </section>
         </div>
       </footer>
